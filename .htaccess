@@ -1,1 +1,1 @@
-Header always set Access-Control-Allow-Origin "https://drive.google.com"
+Header always set Access-Control-Allow-Origin "https://storage.cloud.google.com/"
