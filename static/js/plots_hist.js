@@ -48,11 +48,11 @@ function processData(allRows) {
 }
 
 function makePlotly(x, y) {
-    var plotDiv = document.getElementById("myDiv");
+    var plotDiv = document.getElementById("hist");
 
     var traces = [{
         x: x,
-        y: y
+        type: 'histogram'
     }];
 
     var layout = {
@@ -66,7 +66,7 @@ function makePlotly(x, y) {
         paper_bgcolor: "rgba(0,0,0,0)",
         showlegend: false,
         xaxis: {
-            // title: 'Year',
+            title: 'Year',
             titlefont: {
               family: 'Arial, sans-serif',
               size: 18,
@@ -75,17 +75,15 @@ function makePlotly(x, y) {
             showticklabels: true,
             tickangle: 'auto',
             tickfont: {
-              family: 'Arial, sans-serif',
+              family: 'Old Standard TT, serif',
               size: 14,
-              color: 'lightgrey'
+              color: 'black'
             },
-            gridcolor: 'darkgrey',
             exponentformat: 'e',
             showexponent: 'all'
           },
           yaxis: {
             title: 'Sum of Wars',
-            showgrid: false,
             titlefont: {
               family: 'Arial, sans-serif',
               size: 18,
@@ -94,16 +92,16 @@ function makePlotly(x, y) {
             showticklabels: true,
             tickangle: 45,
             tickfont: {
-              family: 'Arial, sans-serif',
+              family: 'Old Standard TT, serif',
               size: 14,
-              color: 'lightgrey'
+              color: 'black'
             }
         },
         height: 300,
         width: 1000
     };
 
-    Plotly.newPlot('myDiv', traces, layout);
+    Plotly.newPlot('hist', traces, layout);
 };
 
 makeplot();
