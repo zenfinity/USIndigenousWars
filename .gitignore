@@ -2,6 +2,9 @@
 static/data/*
 !static/data/Tribal_Lands_Features_Final_Test.js
 
+#misc
+USIndigenousWars.code-workspace
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
