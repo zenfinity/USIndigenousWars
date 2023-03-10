@@ -56,6 +56,7 @@ let vtOptions = {
     debug: 0,
     style: geojsonStyle
   };
+  
 let vtLayer = L.geoJson.vt(tribalOutlines, vtOptions).addTo(myMap);
 
 ////Markers
