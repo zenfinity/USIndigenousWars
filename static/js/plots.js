@@ -24,9 +24,11 @@
 //         //     Plotly.newPlot('plot-dot', input, layout);
 //     });
 // };
-
+// https://storage.googleapis.com/usindigenouswarsappdata/iWarsDfYearSum.csv
+// static/data/iWarsDfYearSum.csv
 function makeplot() {
-    d3.csv("static/data/iWarsDfYearSum.csv").then(function (data) {
+  
+    d3.csv("https://storage.googleapis.com/usindigenouswarsappdata/iWarsDfYearSum.csv").then(function (data) {
         processData(data);
         console.log("Inside makeplot()");
     });
