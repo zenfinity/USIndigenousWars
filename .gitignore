@@ -1,6 +1,7 @@
 #Uneeded data
 static/data/*
 !static/data/Tribal_Lands_Features_Final_Test.js
+!static/data/reservations.js
 
 #misc
 USIndigenousWars.code-workspace
