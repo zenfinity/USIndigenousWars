@@ -96,16 +96,16 @@ function makePlotly(x, y) {
       titlefont: {
         family: 'Open Sans, sans-serif',
         size: 12,
-        color: 'lightgrey'
+        color: 'grey'
       },
       showticklabels: true,
       tickangle: 'auto',
       tickfont: {
         family: 'Open Sans, sans-serif',
         size: 12,
-        color: 'lightgrey'
+        color: 'grey'
       },
-      gridcolor: 'darkgrey',
+      gridcolor: 'rgba(65,65,65, 0.8)',
       exponentformat: 'e',
       showexponent: 'all'
     },
@@ -115,14 +115,14 @@ function makePlotly(x, y) {
       titlefont: {
         family: 'Open Sans, sans-serif',
         size: 12,
-        color: 'lightgrey'
+        color: 'grey'
       },
       showticklabels: true,
       tickangle: 0,
       tickfont: {
         family: 'Open Sans, sans-serif',
         size: 12,
-        color: 'lightgrey'
+        color: 'grey'
       }
     },
     height: 300,
