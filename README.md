@@ -1,11 +1,11 @@
 # United States Government Wars Against Indigenous Peoples
 ## A visualization
-Inspired by blog post from [Evan Morrison](https://evanstruth.com/2021/10/13/for-indigenous-peoples-day-i-made-a-spreadsheet/)
+Inspired by blog post from [Evan Morrison](https://evanstruth.com/2021/10/13/for-indigenous-peoples-day-i-made-a-spreadsheet/). 
 Compiled and Created by Ian Mac Moore, 2023
 
 ![Map Screenshot](static/img/mapScreenShot.png)
 
-This is an attempt to provide a sense of scale to the continuous, persistent genocidal miltary actions taken by the US Government again indigenous peoples since its very inception. Indeed, these efforts were part of the habitation of white people since first recorded  landing in 1492. However the focus here is on the society which currently exists. The red areas show what was taken by force from tribes recorded as being at war, and then codified in treaties (usually after defeat). Missing from this data (wikipedia article listed below) are the "non-military" actions taken against the societies as a whole. War isn't necessarily genocide. Combined however with atrocity upon atrocity off the battlefield one must constitue the entirety as such.
+This is an attempt to provide a sense of scale to the continuous, persistent genocidal miltary actions taken by the US Government again indigenous peoples since its very inception. Indeed, these efforts were part of the habitation of white people since first recorded  landing in 1492. However the focus here is on the society which currently exists. It's not a complete picture, it's a jumping off point. The red areas show what was taken by force from tribes recorded as being at war, and then codified in treaties (usually after defeat). Missing from this data (wikipedia article listed below) are the "non-military" actions taken against the societies as a whole. War isn't necessarily genocide. Combined however with atrocity upon atrocity off the battlefield one must constitute the entirety as such.
 
 ## Tools Used
 * [Leaflet JS](https://leafletjs.com/)
