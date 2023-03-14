@@ -3,8 +3,8 @@
 let dataUrl_yearSum = "https://storage.googleapis.com/usindigenouswarsappdata/iWarsDfYearSum.csv"
 let selDiv_yearSum = "sumTimeline"
 let label_title_yearSum = "Sum of Simultaneous Wars Per Year"
-let label_x_yearSum = "Sum of Years Years"
-let label_y_yearSum = "Year"
+let label_x_yearSum = ""
+let label_y_yearSum = "Sum of Years"
 let col_x_yearSum = 'Year'
 let col_y_yearSum = 'SumWars'
 

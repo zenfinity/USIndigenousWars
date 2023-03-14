@@ -50,14 +50,30 @@ var geojsonStyle = {
     fillOpacity: 0.6,
 };
 
+var geojsonStyleRes = {
+    fillColor:"#E6AF2E",
+    color: "#001514",
+    weight: 1,
+    opacity: .2,
+    fillOpacity: 0.6,
+};
+
 let vtOptions = {
     maxZoom: 16,
     tolerance: 3,
     debug: 0,
     style: geojsonStyle
   };
+
+let resOptions = {
+    maxZoom: 16,
+    tolerance: 3,
+    debug: 0,
+    style: geojsonStyleRes
+  };
   
 let vtLayer = L.geoJson.vt(tribalOutlines, vtOptions).addTo(myMap);
+let resLayer = L.geoJson.vt(reservations, resOptions).addTo(myMap);
 
 ////Markers
 // d3.json(geoData).then(response => {
@@ -103,7 +119,8 @@ let baseMaps = {
 
 // Create an overlayMaps object to hold the bikeStations layer.
 let overlayMaps = {
-    "Outlines": vtLayer
+    "Outlines": vtLayer,
+    "Reservations": resLayer
 };
 
 // Create a layer control, and pass it baseMaps and overlayMaps. Add the layer control to the map.

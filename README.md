@@ -16,8 +16,14 @@ Compiled and Created by Ian Mac Moore, 2023
 
 
 
-## References and additional resources
-* [Tribal Lands Ceded to the United States, data.gov, accessed 2023/03/07](https://catalog.data.gov/dataset/tribal-lands-ceded-to-the-united-states-feature-layer-cf3ca)
-* [Original blog post inspiration, Evan Morrison, accessed 2023/03/07](https://evanstruth.com/2021/10/16/the-usa-a-nation-at-war/)
-* [List of wars, Wikipedia, accessed 2023/03/07](https://en.wikipedia.org/wiki/List_of_wars_involving_the_United_States)
-* [Quote from Excerpt, accessed 2023/03/09](https://www.penguinrandomhouse.ca/books/237686/an-indigenous-peoples-history-of-the-united-states-by-roxanne-dunbar-ortiz/9780807057834/excerpt)
+### References and additional resources
+* [Tribal Lands Ceded to the United States, data.gov, accessed
+2023/03/07](https://catalog.data.gov/dataset/tribal-lands-ceded-to-the-united-states-feature-layer-cf3ca)
+* [American Indian Areas Related National Geodatabase (zip file download), used to extract reservations geojson data](https://www2.census.gov/geo/tiger/TGRGDB20/tlgdb_2020_a_us_aiarelated.gdb.zip)
+* [US Census Geodatabases download page, accessed 2023/03/13](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-geodatabase-file.html)
+* [Original blog post inspiration, Evan Morrison, accessed
+2023/03/07](https://evanstruth.com/2021/10/16/the-usa-a-nation-at-war/)
+* [List of wars, Wikipedia, accessed
+2023/03/07](https://en.wikipedia.org/wiki/List_of_wars_involving_the_United_States)
+* [Quote from Excerpt, accessed
+2023/03/09](https://www.penguinrandomhouse.ca/books/237686/an-indigenous-peoples-history-of-the-united-states-by-roxanne-dunbar-ortiz/9780807057834/excerpt)
