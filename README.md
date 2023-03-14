@@ -1,6 +1,6 @@
 # United States Government Wars Against Indigenous Peoples
 ## A visualization
-Inspired by blog post from [Evan Morrison](https://evanstruth.com/2021/10/13/for-indigenous-peoples-day-i-made-a-spreadsheet/)
+Inspired by blog post from [Evan Morrison](https://evanstruth.com/2021/10/13/for-indigenous-peoples-day-i-made-a-spreadsheet/). 
 Compiled and Created by Ian Mac Moore, 2023
 
 ![Map Screenshot](static/img/mapScreenShot.png)
