@@ -13,7 +13,8 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Tinos&display=swap"
+    rel="stylesheet">
   <!-- Dark MDB theme -->
   <link rel="stylesheet" href="static/css/mdb.dark.min.css" />
   <!-- Cloud CSS -->
@@ -110,7 +111,7 @@
 
     <!-- Jumbotron -->
     <div class="p-5 text-center bg-dark">
-      <h1>US Wars with Indigenous Tribes</h1>
+      <h3>US Wars with Indigenous Tribes</h3>
       <!-- <h4>Website subheading (h4)</h4> -->
       <div class="card bg-dark text-white rounded-3 mb-3">
         <div class="card-body p-4">
@@ -164,25 +165,41 @@
   <!-- Header -->
 
   <!-- Top Content -->
-  <div class="container align-items-center">
-    
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col-md-12">
-        <div id="myDiv"></div>
-        <!-- <div class="card">
-          <div class="card-body" id="myDiv"></div>
-        </div> -->
-      </div>
-    </div>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="container-float">
+    <!-- <div class="row">
       <div class="col-md-12">
         <div>
-          <p class="small text-muted mb-2">
-            Prior to 1900, all but the Revolutionary War, Mexican-American War, and Civil War were against native tribes.
+          <p class="small text-center">
+            <h5>Map of At-War Tribes' Land Ceded to US Government</h5>
+  
+            <p class="small text-muted mb-2">
+              Areas correspond to entries in the Schedule of Indian Land Cessions, 1896-1897
+            </p>
           </p>
-          <p class="small text-muted mb-2">
+        </div>
+      </div>
+    </div>-->
+    <div class="row"> 
+      <div class="col-lg-12 col-md-12 align-items-center">
+        <div class="align-items-center" id="sumTimeline"></div>
+      </div>
+    </div>
+    <!-- <div class="row">
+      <div class="col-md-12 align-items-center">
+        <div class="align-items-center" id="hist"></div>
+      </div>
+    </div> -->
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <div>
+          <p class="small text-muted mb-2 text-center">
+            Prior to 1900, all but the Revolutionary War, Mexican-American War, and Civil War were against native
+            tribes.
+          </p>
+          <p class="small text-muted mb-2 text-center">
             The longest war in US history is against the Apache Nation, which was continuous from 1849-1925: 70 years
           </p>
+          <hr>
         </div>
       </div>
     </div>
@@ -200,11 +217,11 @@
       <!--Grid column-->
       <div class="col-lg-12 col-md-12 mb-4 h-100 rounded text-center">
         <p class="small text-center">
-        <h5>Map of At-War Tribes' Land Ceded to US Government</h5>
+          <h5>Map of At-War Tribes' Land Ceded to US Government</h5>
 
-        <p class="small text-muted mb-2">
-          Areas correspond to entries in the Schedule of Indian Land Cessions, 1896-1897
-        </p>
+          <p class="small text-muted mb-2">
+            Areas correspond to entries in the Schedule of Indian Land Cessions, 1896-1897
+          </p>
         </p>
 
         <div class="rounded" id="map-id">I'm a map</div>
@@ -257,7 +274,7 @@
   <!-- D3 library -->
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-2.18.2.min.js"></script>
-  <script src="static/js/plots.js"></script>
+  <script src="static/js/plots_mult.js"></script>
   <!-- <script src="static/js/plots_hist.js"></script> -->
 
   <!-- Highcharts library Word Cloud-->

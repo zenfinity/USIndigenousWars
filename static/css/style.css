@@ -1,3 +1,12 @@
 body { 
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
  }
+
+ h1,h2,h3,h4,h5,h6  {
+    font-family: 'Tinos', serif;
+ }
+
+.blockquote {
+    font-family: 'Open Sans', sans-serif;
+}

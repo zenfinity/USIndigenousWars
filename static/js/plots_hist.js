@@ -26,82 +26,110 @@
 // };
 
 function makeplot() {
-    d3.csv("static/data/iWarsDfYearSum.csv").then(function (data) {
-        processData(data);
-        console.log("Inside makeplot()");
-    });
+  d3.csv("static/data/iWarsDfWars.csv").then(function (data) {
+    processData(data);
+    console.log("Inside makeplot()");
+  });
 
 };
 
 function processData(allRows) {
-    console.log("Inside processData()");
-    // console.log(allRows)
-    var x = [], y = [];
+  console.log("Inside processData()");
+  // console.log(allRows)
+  var x = [], y = [];
 
-    for (var i = 0; i < allRows.length; i++) {
-        row = allRows[i];
-        x.push(row['Year']);
-        y.push(row['SumWars']);
-    };
-    console.log('X', x, 'Y', y);
-    makePlotly(x, y);
+  for (var i = 0; i < allRows.length; i++) {
+    row = allRows[i];
+    x.push(row['LengthYears']);
+    //y.push(row['SumWars']);
+  };
+  console.log('X', x, 'Y', y);
+  makePlotly(x, y);
 }
 
 function makePlotly(x, y) {
-    var plotDiv = document.getElementById("hist");
+  var plotDiv = document.getElementById("hist");
 
-    var traces = [{
-        x: x,
-        type: 'histogram'
-    }];
+  var traces = [{
+    x: x,
+    opacity: 0.8,
+    marker: {
+      color: "#6B0504",
+      
+    },
+    width: .1,
+    type: 'histogram'
+  }];
 
-    var layout = {
-        title: "Sum of Simultaneous Wars",
-        titlefont: {
-            family: 'Arial, sans-serif',
-            size: 18,
-            color: 'lightgrey'
-        },
-        plot_bgcolor: "rgba(0,0,0,0)",
-        paper_bgcolor: "rgba(0,0,0,0)",
-        showlegend: false,
-        xaxis: {
-            title: 'Year',
-            titlefont: {
-              family: 'Arial, sans-serif',
-              size: 18,
-              color: 'lightgrey'
-            },
-            showticklabels: true,
-            tickangle: 'auto',
-            tickfont: {
-              family: 'Old Standard TT, serif',
-              size: 14,
-              color: 'black'
-            },
-            exponentformat: 'e',
-            showexponent: 'all'
-          },
-          yaxis: {
-            title: 'Sum of Wars',
-            titlefont: {
-              family: 'Arial, sans-serif',
-              size: 18,
-              color: 'lightgrey'
-            },
-            showticklabels: true,
-            tickangle: 45,
-            tickfont: {
-              family: 'Old Standard TT, serif',
-              size: 14,
-              color: 'black'
-            }
-        },
-        height: 300,
-        width: 1000
-    };
+  // var trace2 = {
+  //   x: x2,
+  //   y: y2,
+  //   autobinx: false,
+  //   marker: {
+  //     color: "rgba(100, 200, 102, 0.7)",
+  //     width: 1
+  //   },
+  //   name: "experimental",
+  //   opacity: 0.75,
+  //   type: "histogram",
+  //   xbins: {
+  //     end: 4,
+  //     size: 0.06,
+  //     start: -3.2
 
-    Plotly.newPlot('hist', traces, layout);
+  //   }
+  // };
+
+  var layout = {
+    title: "Distribution of War Length",
+    titlefont: {
+      family: 'Times New Roman, serif',
+      size: 18,
+      color: 'white'
+
+    },
+    plot_bgcolor: "rgba(0,0,0,0)",
+    paper_bgcolor: "rgba(0,0,0,0)",
+    showlegend: false,
+    xaxis: {
+      // title: 'Year',
+      titlefont: {
+        family: 'Open Sans, sans-serif',
+        size: 12,
+        color: 'lightgrey'
+      },
+      showticklabels: true,
+      tickangle: 'auto',
+      tickfont: {
+        family: 'Open Sans, sans-serif',
+        size: 12,
+        color: 'lightgrey'
+      },
+      gridcolor: 'darkgrey',
+      exponentformat: 'e',
+      showexponent: 'all'
+    },
+    yaxis: {
+      title: 'Sum of Wars',
+      showgrid: false,
+      titlefont: {
+        family: 'Open Sans, sans-serif',
+        size: 12,
+        color: 'lightgrey'
+      },
+      showticklabels: true,
+      tickangle: 0,
+      tickfont: {
+        family: 'Open Sans, sans-serif',
+        size: 12,
+        color: 'lightgrey'
+      }
+    },
+    height: 300,
+    width: 1000
+  };
+
+  Plotly.newPlot('sumTimeline', traces, layout);
 };
 
 makeplot();

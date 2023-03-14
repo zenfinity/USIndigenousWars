@@ -28,11 +28,17 @@
 // static/data/iWarsDfYearSum.csv
 function makeplot() {
   
-    d3.csv("https://storage.googleapis.com/usindigenouswarsappdata/iWarsDfYearSum.csv").then(function (data) {
+    var csvData = d3.csv("https://storage.googleapis.com/usindigenouswarsappdata/iWarsDfYearSum.csv").then(function (data) {
         processData(data);
-        console.log("Inside makeplot()");
-    });
+        console.log("Inside makeplot csv data()");
+        console.log(data)
 
+        return data;
+    });
+    console.log("Inside makeplot()");
+    console.log(csvData)
+
+    return csvData;
 };
 
 function processData(allRows) {
@@ -50,7 +56,7 @@ function processData(allRows) {
 }
 
 function makePlotly(x, y) {
-    var plotDiv = document.getElementById("myDiv");
+    var plotDiv = document.getElementById("sumTimeline");
 
     var traces = [{
         x: x,
@@ -60,9 +66,10 @@ function makePlotly(x, y) {
     var layout = {
         title: "Sum of Simultaneous Wars",
         titlefont: {
-            family: 'Arial, sans-serif',
+            family: 'Times New Roman, serif',
             size: 18,
             color: 'lightgrey'
+            
         },
         plot_bgcolor: "rgba(0,0,0,0)",
         paper_bgcolor: "rgba(0,0,0,0)",
@@ -70,15 +77,15 @@ function makePlotly(x, y) {
         xaxis: {
             // title: 'Year',
             titlefont: {
-              family: 'Arial, sans-serif',
-              size: 18,
+              family: 'Open Sans, sans-serif',
+              size: 12,
               color: 'lightgrey'
             },
             showticklabels: true,
             tickangle: 'auto',
             tickfont: {
-              family: 'Arial, sans-serif',
-              size: 14,
+              family: 'Open Sans, sans-serif',
+              size: 12,
               color: 'lightgrey'
             },
             gridcolor: 'darkgrey',
@@ -89,15 +96,15 @@ function makePlotly(x, y) {
             title: 'Sum of Wars',
             showgrid: false,
             titlefont: {
-              family: 'Arial, sans-serif',
-              size: 18,
+              family: 'Open Sans, sans-serif',
+              size: 12,
               color: 'lightgrey'
             },
             showticklabels: true,
-            tickangle: 45,
+            tickangle: 0,
             tickfont: {
-              family: 'Arial, sans-serif',
-              size: 14,
+              family: 'Open Sans, sans-serif',
+              size: 12,
               color: 'lightgrey'
             }
         },
@@ -105,10 +112,14 @@ function makePlotly(x, y) {
         width: 1000
     };
 
-    Plotly.newPlot('myDiv', traces, layout);
+    Plotly.newPlot('sumTimeline', traces, layout);
 };
 
-makeplot();
+console.log("Outside");
+
+let plotData = makeplot();
+
+console.log(plotData)
 
 // // // On change to the DOM, call getData()
 // // d3.selectAll("#selDataset").on("change", getData);
