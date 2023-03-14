@@ -2,7 +2,7 @@
 // Initialize map options
 var newYorkCoords = [40.73, -74.0059];
 var usCenterCoords = [39.8283, -98.5795];
-var mapZoomLevel = 5;
+var mapZoomLevel = 4;
 
 // Create the map object with options.
 var myMap = L.map("map-id", {
